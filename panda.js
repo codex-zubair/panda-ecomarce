@@ -23,4 +23,21 @@ for (element of cardClass) {
 
 
 
-// 
+// Adding Submit button alert...
+const submitBtn = document.getElementById('submit')
+
+submitBtn.addEventListener('click', () => {
+    console.log("Pressed Submit Button");
+    alert("Pressed Submit button");
+})
+
+
+// Removing div file by clicking by now...
+const buyNow = document.getElementsByClassName('button')
+for (btn of buyNow) {
+    btn.addEventListener('click', (event) => {
+
+        const node = event.target.parentNode.parentNode.parentNode;
+        node.remove();
+    })
+}
