@@ -41,3 +41,15 @@ for (btn of buyNow) {
         node.remove();
     })
 }
+
+
+
+// Disable button attribute Removed...
+const inputField = document.getElementById('input-field')
+// adding input field function
+inputField.addEventListener('keyup',()=>{
+    if(inputField.value == 'email')
+    {
+        submit.removeAttribute('disabled')
+    }
+})
