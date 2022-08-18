@@ -53,3 +53,7 @@ inputField.addEventListener('keyup',()=>{
         submit.removeAttribute('disabled')
     }
 })
+
+
+
+// Changing image.
