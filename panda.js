@@ -57,3 +57,24 @@ inputField.addEventListener('keyup',()=>{
 
 
 // Changing image.
+const blackBag = document.getElementById('image-black-bag')
+
+
+blackBag.addEventListener('mouseenter', ()=>{
+    blackBag.src = "./images/bags/bag-2.png" 
+})
+blackBag.addEventListener('mouseout', ()=>{
+    blackBag.src = "./images/bags/bag-3.png" 
+})
+
+
+
+// changing color of lets stay in touch section...
+const subscribeSection = document.getElementById('Subscribe');
+
+
+subscribeSection.addEventListener('dblclick',()=>{
+    subscribeSection.style.backgroundColor = 'purple'
+})
+
+
