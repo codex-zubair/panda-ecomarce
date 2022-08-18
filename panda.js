@@ -32,27 +32,52 @@ submitBtn.addEventListener('click', () => {
 })
 
 
+
+
+
+
 // Removing div file by clicking by now...
 const buyNow = document.getElementsByClassName('button')
 for (btn of buyNow) {
+    
+   
+    
     btn.addEventListener('click', (event) => {
 
-        const node = event.target.parentNode.parentNode.parentNode;
-        node.remove();
+
+
+    // Removing section...
+    const parent = event.target.parentNode.parentNode.parentNode;
+
+
+    parent.remove();
+
+
+
     })
 }
+
+
+
+
+
+
 
 
 
 // Disable button attribute Removed...
 const inputField = document.getElementById('input-field')
 // adding input field function
-inputField.addEventListener('keyup',()=>{
-    if(inputField.value == 'email')
-    {
+inputField.addEventListener('keyup', (event) => {
+    if (inputField.value == 'email') {
         submit.removeAttribute('disabled')
+
     }
 })
+
+
+
+
 
 
 
@@ -60,11 +85,13 @@ inputField.addEventListener('keyup',()=>{
 const blackBag = document.getElementById('image-black-bag')
 
 
-blackBag.addEventListener('mouseenter', ()=>{
-    blackBag.src = "./images/bags/bag-2.png" 
+blackBag.addEventListener('mouseenter', () => {
+    blackBag.src = "./images/bags/bag-2.png"
 })
-blackBag.addEventListener('mouseout', ()=>{
-    blackBag.src = "./images/bags/bag-3.png" 
+
+
+blackBag.addEventListener('mouseout', () => {
+    blackBag.src = "./images/bags/bag-3.png"
 })
 
 
@@ -73,9 +100,32 @@ blackBag.addEventListener('mouseout', ()=>{
 const subscribeSection = document.getElementById('Subscribe');
 
 
-subscribeSection.addEventListener('dblclick',()=>{
+subscribeSection.addEventListener('dblclick', (event) => {
     subscribeSection.style.backgroundColor = 'purple'
+
+
+
 })
+
+
+
+
+// changing color of lets stay in touch section...
+const input = document.getElementById('inputx');
+
+
+input.addEventListener('dblclick', (event) => {
+    event.stopPropagation();
+
+
+})
+
+
+
+
+
+
+
 
 
 
